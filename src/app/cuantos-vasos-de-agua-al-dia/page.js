@@ -163,7 +163,7 @@ export default function CuantosVasosDeAgua() {
               <h3 className="text-xl font-semibold text-sky-800 mb-4">¿Por qué es importante personalizar?</h3>
               <div className="space-y-4 text-sky-700">
                 <p>
-                  La recomendación clásica de "8 vasos al día" es un punto de partida general, pero no considera las diferencias individuales.
+                  La recomendación clásica de &ldquo;8 vasos al día&rdquo; es un punto de partida general, pero no considera las diferencias individuales.
                 </p>
                 <p>
                   <strong>La fórmula de hidratación personalizada</strong> ajusta la ingesta de agua según tu peso corporal, ofreciendo una recomendación más precisa para tus necesidades específicas.

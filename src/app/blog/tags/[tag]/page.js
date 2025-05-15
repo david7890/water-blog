@@ -57,7 +57,7 @@ export default function TagPage({ params }) {
         <div className="text-center py-8">
           <h2 className="text-xl font-bold mb-2">No hay artículos disponibles</h2>
           <p className="text-gray-600 mb-4">
-            No hemos encontrado artículos con la etiqueta "{tag}".
+            No hemos encontrado artículos con la etiqueta &ldquo;{tag}&rdquo;.
           </p>
           <Link 
             href="/blog" 
