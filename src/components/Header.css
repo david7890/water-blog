@@ -1,0 +1,21 @@
+/* Header styles */
+.header-shadow {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the header has a solid background */
+.header-solid {
+  background-color: #ffffff !important;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .header-mobile {
+    background-color: #ffffff !important;
+  }
+}
+
+/* Transition effects */
+.header-transition {
+  transition: all 0.3s ease;
+} 

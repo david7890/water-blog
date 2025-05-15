@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,22 +24,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="fixed w-full bg-sky-50/80 backdrop-blur-sm border-b border-sky-100 z-10">
-          <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-            <Link href="/" className="text-2xl font-bold text-sky-600 hover:text-sky-700 transition-colors">
-              aquaMind
-            </Link>
-            <nav>
-              <ul className="flex space-x-6">
-                <li><Link href="/" className="text-sky-700 hover:text-sky-500 transition-colors">Inicio</Link></li>
-                <li><Link href="/beneficios" className="text-sky-700 hover:text-sky-500 transition-colors">Beneficios</Link></li>
-                <li><Link href="/consejos" className="text-sky-700 hover:text-sky-500 transition-colors">Consejos</Link></li>
-                <li><Link href="/blog" className="text-sky-700 hover:text-sky-500 transition-colors">Blog</Link></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-        <main className="pt-20">
+        <Header />
+        <main className="pt-24">
           {children}
         </main>
         <footer className="bg-sky-900 text-white py-8 mt-12">

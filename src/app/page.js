@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-sky-50 to-sky-100">
+      <section className="relative pt-8 pb-16 flex items-center justify-center bg-gradient-to-br from-sky-50 to-sky-100">
         <div className="absolute inset-0 overflow-hidden opacity-20">
           <div className="absolute top-0 -left-4 w-72 h-72 bg-sky-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
           <div className="absolute top-0 -right-4 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
@@ -14,10 +14,10 @@ export default function Home() {
         </div>
         <div className="container mx-auto px-4 z-10">
           <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+            <div className="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
               <h2 className="text-4xl md:text-5xl font-bold text-sky-900 mb-4">Descubre el poder de la hidratación</h2>
               <p className="text-lg text-sky-700 mb-6">Tomar agua regularmente es esencial para mantener un cuerpo sano y una mente clara. Aprende con nosotros la importancia de este hábito vital.</p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mb-10 md:mb-0">
                 <Link href="/cuantos-vasos-de-agua-al-dia" className="px-6 py-3 bg-sky-600 text-white rounded-full shadow-lg hover:bg-sky-700 transition-colors font-semibold text-center">
                   Descubre cuánta agua necesitas
                 </Link>
@@ -26,14 +26,16 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="md:w-1/2 relative">
-              <div className="w-full h-96 relative">
+            
+            {/* Hero Image - Modified for better mobile display */}
+            <div className="w-full md:w-1/2">
+              <div className="hero-image-container w-full h-64 sm:h-80 md:h-96 relative mx-auto max-w-md md:max-w-full">
                 <Image
                   src="/images/hero-image.png"
                   alt="Vaso de agua cristalina"
                   fill
-                  style={{ objectFit: "cover" }}
-                  className="rounded-2xl shadow-xl"
+                  style={{ objectFit: "contain" }}
+                  className="rounded-2xl"
                   priority
                 />
               </div>
